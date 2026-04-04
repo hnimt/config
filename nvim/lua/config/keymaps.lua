@@ -17,3 +17,4 @@ vim.keymap.set("n", "<leader>w", "<leader>bd", { remap = true, desc = "Close Cur
 vim.keymap.set("n", "<C-CR>", "o<Esc>", { desc = "New line above" })
 vim.keymap.set("n", "<S-CR>", "O<Esc>", { desc = "New line above" })
 
+vim.keymap.set("n", "<leader>t", "<leader>ft", {remap = true})
