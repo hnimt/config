@@ -9,3 +9,11 @@ vim.keymap.set('n', '<C-_>', 'gcc', { remap = true })
 -- Visual mode: Toggle comment for the selection
 vim.keymap.set('v', '<C-/>', 'gc', { remap = true })
 vim.keymap.set('v', '<C-_>', 'gc', { remap = true })
+
+-- Close current file (buffer) with leader + w
+vim.keymap.set("n", "<leader>w", "<leader>bd", { remap = true, desc = "Close Current File" })
+
+-- Press Shift + Enter to create a new line above
+vim.keymap.set("n", "<C-CR>", "o<Esc>", { desc = "New line above" })
+vim.keymap.set("n", "<S-CR>", "O<Esc>", { desc = "New line above" })
+
