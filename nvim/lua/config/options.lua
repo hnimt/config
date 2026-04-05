@@ -7,4 +7,7 @@ opt.shiftwidth = 4 -- Size of an indent
 opt.tabstop = 4 -- Number of spaces tabs count for
 opt.softtabstop = 4 -- Number of spaces a tab counts for while editing
 opt.expandtab = true -- Use spaces instead of tabs
-vim.o.exrc = true  -- Allows loading local .nvim.lua files
+
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.exrc = true -- Allows loading local .nvim.lua files
