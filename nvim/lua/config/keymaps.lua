@@ -17,7 +17,7 @@ vim.keymap.set("n", "<C-CR>", "o<Esc>", { desc = "New line above" })
 vim.keymap.set("n", "<S-CR>", "O<Esc>", { desc = "New line above" })
 
 vim.keymap.set("n", "<leader>t", "<leader>ft", { remap = true })
-vim.keymap.set("n", "<S-F>", "*", { remap = true })
+vim.keymap.set("n", "<C-F>", "*", { remap = true })
 
 -- Move text up and down
 vim.keymap.set("n", "<C-j>", ":m .+1<CR>==", { desc = "Move line down" })
