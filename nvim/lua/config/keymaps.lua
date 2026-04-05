@@ -28,4 +28,4 @@ vim.keymap.set("v", "∆", ":m '>+1<CR>gv=gv", { silent = true })
 vim.keymap.set("v", "˚", ":m '<-2<CR>gv=gv", { silent = true })
 
 -- Toggle collapse block comment
-vim.keymap.set("n", "∫", "za")
+vim.keymap.set("n", "ç", "za")
