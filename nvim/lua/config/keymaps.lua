@@ -18,3 +18,11 @@ vim.keymap.set("n", "<S-CR>", "O<Esc>", { desc = "New line above" })
 
 vim.keymap.set("n", "<leader>t", "<leader>ft", { remap = true })
 vim.keymap.set("n", "<S-F>", "*", { remap = true })
+
+-- Move text up and down
+vim.keymap.set("n", "<C-j>", ":m .+1<CR>==", { desc = "Move line down" })
+vim.keymap.set("n", "<C-k>", ":m .-2<CR>==", { desc = "Move line up" })
+vim.keymap.set("i", "<C-j>", "<Esc>:m .+1<CR>==gi", { desc = "Move line down (Insert)" })
+vim.keymap.set("i", "<C-k>", "<Esc>:m .-2<CR>==gi", { desc = "Move line up (Insert)" })
+vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
+vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
