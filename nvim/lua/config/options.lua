@@ -11,3 +11,13 @@ opt.expandtab = true -- Use spaces instead of tabs
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.exrc = true -- Allows loading local .nvim.lua files
+
+-- Automatically restore the session when starting Neovim
+vim.api.nvim_create_autocmd("VimEnter", {
+  group = vim.api.nvim_create_augroup("restore_session", { clear = true }),
+  callback = function()
+    if vim.fn.argc() == 0 and not vim.g.started_with_stdin then
+      require("persistence").load()
+    end
+  end,
+})
