@@ -6,8 +6,8 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-       colorscheme = "gruvbox", -- Replace with your chosen theme name
-       -- colorscheme = "catppuccin-mocha", -- Replace with your chosen theme name
+      colorscheme = "gruvbox", -- Replace with your chosen theme name
+      -- colorscheme = "catppuccin-mocha", -- Replace with your chosen theme name
     },
   },
 }
