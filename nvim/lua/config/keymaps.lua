@@ -9,12 +9,8 @@ vim.keymap.set("n", "<C-_>", "gcc", { remap = true })
 vim.keymap.set("v", "<C-/>", "gc", { remap = true })
 vim.keymap.set("v", "<C-_>", "gc", { remap = true })
 
--- Close current file (buffer) with leader + w
-vim.keymap.set("n", "<leader>w", "<leader>bd", { remap = true, desc = "Close Current File" })
-
 -- Press Shift + Enter to create a new line above
-vim.keymap.set("n", "<A-CR>", "o<Esc>", { desc = "New line above" })
-vim.keymap.set("n", "<S-CR>", "O<Esc>", { desc = "New line above" })
+vim.keymap.set("n", "<S-CR>", "o<Esc>", { desc = "New line above" })
 
 -- Search current word
 vim.keymap.set("n", "<S-F>", "*", { remap = true })
@@ -32,3 +28,6 @@ vim.keymap.set("v", "˚", ":m '<-2<CR>gv=gv", { silent = true })
 
 -- Toggle collapse block comment
 vim.keymap.set("n", "ç", "za")
+
+-- <leader><leader> toggles between buffers
+vim.keymap.set("n", "<leader><leader>", "<c-^>")
