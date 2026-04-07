@@ -12,9 +12,6 @@ vim.keymap.set("v", "<C-_>", "gc", { remap = true })
 -- Press Shift + Enter to create a new line above
 vim.keymap.set("n", "<S-CR>", "o<Esc>", { desc = "New line above" })
 
--- Search current word
-vim.keymap.set("n", "<S-F>", "*", { remap = true })
-
 -- Quick open terminal
 vim.keymap.set("n", "<C-`>", "<leader>ft", { remap = true, silent = true })
 
