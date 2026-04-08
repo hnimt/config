@@ -15,6 +15,9 @@ vim.o.exrc = true -- Allows loading local .nvim.lua files
 -- Make always root where i open
 vim.g.root_spec = { "cwd" }
 
+-- Disable autoformat on save globally
+vim.g.autoformat = false
+
 -- Automatically restore the session when starting Neovim
 vim.api.nvim_create_autocmd("VimEnter", {
   group = vim.api.nvim_create_augroup("restore_session", { clear = true }),
