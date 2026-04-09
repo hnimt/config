@@ -57,3 +57,9 @@ nnoremap <leader>bd :q<CR>
 
 " Shift + Enter to add line below
 nnoremap <S-Enter> :action EditorStartNewLine<CR>
+
+" Shift + l to go to the next tab
+nnoremap L :action NextTab<CR>
+
+" Shift + h to go to the previous tab
+nnoremap H :action PreviousTab<CR>
