@@ -11,6 +11,7 @@ opt.expandtab = true -- Use spaces instead of tabs
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.exrc = true -- Allows loading local .nvim.lua files
+vim.g.snacks_animate = false
 
 -- Make always root where i open
 vim.g.root_spec = { "cwd" }
