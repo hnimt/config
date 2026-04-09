@@ -39,11 +39,13 @@ nnoremap <leader>/ :action FindInPath<CR>
 " This mimics the standard Vim 'Ctrl-^' behavior
 nnoremap <leader><leader> <C-^>
 
-" Project tool window (File explorer)
-nnoremap <leader>ee :action ActivateProjectToolWindow<CR>
+" [leader] + [,] to show open/recent files
+nnoremap <leader>, :action RecentFiles<CR>
 
 " Go to implementation
 nnoremap gi :action GotoImplementation<CR>
+
+nnoremap gI :action GotoSuperMethod<CR>
 
 nnoremap <leader>rn :action RenameElement<CR>
 
