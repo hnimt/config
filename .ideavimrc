@@ -43,12 +43,17 @@ nnoremap <leader><leader> <C-^>
 nnoremap <leader>, :action RecentFiles<CR>
 
 " Go to implementation
-nnoremap gi :action GotoImplementation<CR>
+nnoremap gI :action GotoImplementation<CR>
 
-nnoremap gI :action GotoSuperMethod<CR>
+nnoremap gy :action GotoSuperMethod<CR>
 
 nnoremap <leader>rn :action RenameElement<CR>
 
 nnoremap <leader>fm :action ReformatCode<CR>
 
 nnoremap <leader>oi :action OptimizeImports<CR>
+
+nnoremap <leader>bd :q<CR>
+
+" Shift + Enter to add line below
+nnoremap <S-Enter> :action EditorStartNewLine<CR>
