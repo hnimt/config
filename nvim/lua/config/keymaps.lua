@@ -28,3 +28,5 @@ vim.keymap.set("n", "ç", "za")
 
 -- <leader><leader> toggles between buffers
 vim.keymap.set("n", "<leader><leader>", "<c-^>")
+
+vim.keymap.set({ "n", "i", "v" }, "<C-a>", "<esc>ggVG", { desc = "Select All" })
