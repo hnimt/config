@@ -4,8 +4,8 @@ return {
     picker = {
       sources = {
         explorer = {
-          -- hidden = true,
-          -- ignored = false,
+          hidden = true,
+          ignored = false,
           auto_close = true,
           layout = {
             cycle = false,
