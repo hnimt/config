@@ -7,8 +7,8 @@ config.font_size = 13.0
 
 config.keys = {
 	-- Split panes
-	{ key = "v", mods = "CTRL|SHIFT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-	{ key = "h", mods = "CTRL|SHIFT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+	{ key = "l", mods = "CTRL|SHIFT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+	{ key = "j", mods = "CTRL|SHIFT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 
 	-- Navigate panes (vim style)
 	{ key = "h", mods = "ALT", action = act.ActivatePaneDirection("Left") },
