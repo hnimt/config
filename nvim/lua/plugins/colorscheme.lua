@@ -8,6 +8,7 @@ return {
     opts = {
       colorscheme = "gruvbox", -- Replace with your chosen theme name
       -- colorscheme = "catppuccin-mocha", -- Replace with your chosen theme name
+      -- colorscheme = "tokyonight-night", -- Replace with your chosen theme name
     },
   },
 }
