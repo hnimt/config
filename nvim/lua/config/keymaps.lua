@@ -30,3 +30,4 @@ vim.keymap.set("n", "ç", "za")
 vim.keymap.set("n", "<leader><leader>", "<c-^>")
 
 vim.keymap.set({ "n", "i", "v" }, "<C-a>", "<esc>ggVG", { desc = "Select All" })
+
