@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk ls *)",
+      "WebSearch",
+      "Bash(rtk grep *)",
+      "Bash(rtk tree *)",
+      "Bash(rtk find *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:godotforums.org)",
+      "WebFetch(domain:jackharrington.bearblog.dev)",
+      "WebFetch(domain:gist.github.com)"
+    ]
+  }
+}

@@ -4,6 +4,10 @@ return {
     picker = {
       sources = {
         explorer = {
+          exclude = {
+            "**/*.uid",
+            "**/*.import",
+          },
           hidden = true,
           ignored = false,
           auto_close = true,
