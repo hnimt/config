@@ -1,0 +1,6 @@
+"vim.normalModeKeyBindingsNonRecursive": [
+  {
+    "before": ["<C-a>"],
+    "commands": ["editor.action.selectAll"]
+  }
+]
