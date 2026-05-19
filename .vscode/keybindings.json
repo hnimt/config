@@ -1,32 +1,9 @@
-// // Place your key bindings in this file to override the defaults
-// [
-//   {
-//     "key": "cmd+s cmd+s",
-//     "command": "saveAll"
-//   },
-//   {
-//     "key": "alt+cmd+s",
-//     "command": "-saveAll"
-//   },
-//   {
-//     "key": "alt+k",
-//     "command": "workbench.action.navigateForward",
-//     "when": "canNavigateForward"
-//   },
-//   {
-//     "key": "alt+j",
-//     "command": "workbench.action.navigateBack",
-//     "when": "canNavigateBack"
-//   }
-// ]
-
 [
-  // Navigation
+    // Navigation
   {
     "key": "ctrl+s ctrl+s",
     "command": "saveAll"
   },
-
   {
     "key": "ctrl-h",
     "command": "workbench.action.navigateLeft"
@@ -85,7 +62,6 @@
     "command": "workbench.action.splitEditorDown",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
-
   // Coding
   {
     "key": "alt+j",
@@ -172,7 +148,10 @@
     "command": "runCommands",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
     "args": {
-      "commands": ["workbench.view.scm", "workbench.scm.focus"]
+      "commands": [
+        "workbench.view.scm",
+        "workbench.scm.focus"
+      ]
     }
   },
   {
@@ -180,7 +159,6 @@
     "command": "editor.action.addSelectionToNextFindMatch",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
-
   // File Explorer
   {
     "key": "r",
@@ -239,7 +217,6 @@
     "command": "list.toggleExpand",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && explorerResourceIsFolder && !inputFocus"
   },
-
   // Debug
   {
     "key": "space d a",
@@ -270,5 +247,10 @@
     "key": "space d c",
     "command": "workbench.action.debug.continue",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
+  },
+  {
+    "key": "shift+z",
+    "command": "list.collapseAll",
+    "when": "explorerViewletVisible && filesExplorerFocus"
   }
 ]
