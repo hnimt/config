@@ -1,6 +1,6 @@
 " .ideavimrc is a configuration file for IdeaVim plugin. It uses
 "   the same commands as the original .vimrc configuration.
-" You can find a list of commands here: https://jb.gg/h38q75
+" You can find a list of commands here: https://jb.gg/h39q75
 " Find more examples here: https://jb.gg/share-ideavimrc
 
 " Source your .vimrc
@@ -9,7 +9,7 @@ source ~/.vimrc
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
-set scrolloff=5
+set scrolloff=6
 
 " Do incremental searching.
 set incsearch
@@ -63,3 +63,7 @@ nnoremap L :action NextTab<CR>
 
 " Shift + h to go to the previous tab
 nnoremap H :action PreviousTab<CR>
+
+nnoremap <C-h> :action ActivateProjectToolWindow<CR>
+
+nnoremap <C-a> ggVG
